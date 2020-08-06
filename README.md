@@ -1,7 +1,8 @@
 # AMAZING
- Small effect during study time
+ <h1>Small effect during study time<h1>
  <br>
- 1.Falling leaves<br>
+ <h2>1.Falling leaves<h2>
+ <br>
  <img src="Falling%20_leaves/Leaves__img/Falling__leave.png">
  <br>
  <hr>
