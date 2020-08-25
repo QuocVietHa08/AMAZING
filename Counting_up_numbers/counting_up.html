@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counting up number on webiste</title>
+    <link rel="stylesheet" href="./couting_up.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- jquery cdn  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- counter up cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <!-- waypoint cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  </head>
+  <body>
+    <div class="middle">
+      <div class="counting-sec">
+        <div class="inner-width">
+          <!-- item 1 -->
+          <div class="col">
+            <i class="fa fa-smile-o" aria-hidden="true"></i>
+            <div class="num">1246</div>
+            speaker
+          </div>
+          <!-- item 2 -->
+          <div class="col">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+            <div class="num">19</div>
+            service
+          </div>
+          <!-- item 3 -->
+          <div class="col">
+            <i class="fa fa-money" aria-hidden="true"></i>
+            <div class="num">786</div>
+            sells
+          </div>
+          <!-- item 4 -->
+          <div class="col">
+            <i class="fa fa-object-group" aria-hidden="true"></i>
+            <div class="num">196</div>
+            team
+          </div>
+          <!-- end item  -->
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $('.num').counterUp({ delay: 10, time: 1000 });
+    </script>
+  </body>
+</html>
