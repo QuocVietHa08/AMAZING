@@ -1,0 +1,113 @@
+#menu-navbar {
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: Roboto;
+  color: #333333;
+  font-weight: 300;
+  height: 35px;
+  border-bottom: 2px solid #c0020f;
+  width: 100%;
+  .main-navbar {
+    background: #ffffff;
+    .wrapper {
+      max-width: 1270px;
+      margin: 0 auto;
+      padding: 0 30px;
+      .inner {
+        box-sizing: border-box;
+        .menu-container {
+          width: 100%;
+          display: flex;
+          .grid-item {
+            list-style: none;
+            margin: 0;
+            width: 16%;
+            padding: 0;
+            margin-left: 0px;
+            text-align: center;
+            line-height: 35px;
+            width: 201px;
+            // mega menu head
+            .megamenu-head {
+              color: white;
+              font-size: 14px;
+              text-transform: uppercase;
+              background-color: #c0020f;
+              height: 100%;
+            }
+            // megamenu body
+            .megamenu-body {
+              position: relative;
+              display: none;
+              .megamenu-list {
+                margin-top: 0;
+                list-style: none;
+                padding-left: 0;
+                color: black;
+                width: 202px;
+                position: relative;
+                text-align: left;
+                li {
+                  width: 100%;
+                  position: relative;
+                  height: 35px;
+
+                  a {
+                    text-decoration: none;
+                    color: black;
+                    padding-left: 40px;
+                    &:hover {
+                      color: red;
+                    }
+                  }
+                  i {
+                    position: absolute;
+                    right: 10px;
+                    top: 30%;
+                  }
+                }
+              }
+            }
+            &:hover .megamenu-body {
+              display: block;
+            }
+            // grid item 2
+          }
+          .grid-item2 {
+            width: 84%;
+            height: 35px;
+            .navbar-list {
+              display: flex;
+              /* justify-content: space-evenly; */
+              list-style: none;
+              li {
+                padding: 0 10px;
+                a {
+                  text-decoration: none;
+                  color: black;
+                  &:hover {
+                    color: red;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#displayNone,
+#displayNone2 {
+  display: none;
+}
+
+.megamenu-dropdown:hover #displayNone {
+  display: block;
+}
+#displayNone:hover #displayNone2 {
+  display: block;
+}
+.megamenu-head:hover .megamenu-body {
+  display: block !important;
+}
