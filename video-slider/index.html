@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video slider with pure js</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section>
+      <video id="slider" autoplay muted loop>
+        <source src="video (1).mp4" type="video/mp4" />
+      </video>
+      <ul class="navigation">
+        <li onclick="videoUrl('./grass.mp4')">
+          <img src="picture1-grass.png" />
+        </li>
+        <li onclick="videoUrl('./Pexels Videos 1779202.mp4')">
+          <img src="./picture2-pixel-177.png" />
+        </li>
+        <li onclick="videoUrl('./Pexels Videos 2519660.mp4')">
+          <img src="./picture3-pixel.png" />
+        </li>
+        <li onclick="videoUrl('./video (1).mp4')">
+          <img src="./picture4-runninng.png" />
+        </li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function videoUrl(hello) {
+        document.getElementById('slider').src = hello;
+      }
+    </script>
+  </body>
+</html>
