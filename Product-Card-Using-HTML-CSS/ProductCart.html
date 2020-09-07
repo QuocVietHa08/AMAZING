@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Cart Using HTML and CSS</title>
+    <link rel="stylesheet" href="./ProductCart.css" />
+    <!-- fontawesome cdn linke -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="shoeBackground">
+          <div class="gradients">
+            <div class="gradient second" color="blue"></div>
+            <div class="gradient" color="red"></div>
+            <div class="gradient" color="green"></div>
+            <div class="gradient" color="orange"></div>
+            <div class="gradient" color="black"></div>
+          </div>
+          <!-- shoes title section  -->
+          <h1 class="nike">Nike</h1>
+          <img src="./img/logo.png" class="logo" />
+          <a href="#" class="share"
+            ><i class="fa fa-share-alt" aria-hidden="true"></i>
+          </a>
+          <!-- img section  -->
+          <img src="./img/blue.png" alt="" class="shoe show" color="blue" />
+          <img src="./img/red.png" alt="" class="shoe" color="red" />
+          <img src="./img/green.png" alt="" class="shoe" color="green" />
+          <img src="./img/orange.png" alt="" class="shoe" color="orange" />
+          <img src="./img/black.png" alt="" class="shoe" color="black" />
+        </div>
+        <!-- div info section  -->
+        <div class="info">
+          <div class="shoeName">
+            <div>
+              <h1 class="big">Nike Zoom KD 12</h1>
+              <span class="new">new</span>
+            </div>
+            <h3 class="small">Men's running shoes</h3>
+          </div>
+          <!-- cart description  -->
+          <div class="des">
+            <h3 class="title">Product Info</h3>
+            <p class="text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+              delectus unde, tempora expedita velit corrupti dolore et qui
+              quasi, accusantium nam deleniti sint est tenetur dolorum pariatur
+            </p>
+          </div>
+          <!-- cart color selection  -->
+          <div class="color-container">
+            <h3 class="title">color</h3>
+            <div class="colors">
+              <span class="color active" primary="#2175f5" color="blue"></span>
+              <span class="color" primary="#f84848" color="red"></span>
+              <span class="color" primary="#29b864" color="green"></span>
+              <span class="color" primary="#ff5521" color="orange"></span>
+              <span class="color" primary="#444" color="black"></span>
+            </div>
+          </div>
+          <!-- size of the shoes -->
+          <div class="size-container">
+            <h3 class="title">size</h3>
+            <div class="sizes">
+              <span class="size">7</span>
+              <span class="size active">8</span>
+              <span class="size">9</span>
+              <span class="size">10</span>
+              <span class="size">11</span>
+            </div>
+          </div>
+          <!-- buy size -->
+          <div class="buy-size">
+            <a href="#" class="buy">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to
+              cart</a
+            >
+            <div class="price">
+              <i class="fa fa-usd" aria-hidden="true"></i>
+              <h1>189.99</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./ProductCart.js"></script>
+  </body>
+</html>
