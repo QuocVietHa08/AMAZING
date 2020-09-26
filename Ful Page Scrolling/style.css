@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+.container .section {
+  position: relative;
+  height: 100%;
+  scroll-snap-align: start;
+  width: 100%;
+}
+.container .section:nth-child(1) {
+  background: url(./img/grow_up.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container .section:nth-child(2) {
+  background: url(./img/kaizen.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container .section:nth-child(3) {
+  background: url(./img/kaizen2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container .section .content {
+  color: black;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+.container .section .content h2 {
+  font-size: 30px;
+  background: #fff;
+  width: 250px;
+  font-weight: bold;
+  text-align: center;
+}
+.container .section .content p {
+  width: 500px;
+  margin: 10px;
+  background: #fff;
+}
