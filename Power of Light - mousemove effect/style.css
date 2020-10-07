@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-origin: padding-box;
+  box-sizing: border-box;
+}
+section {
+  position: relative;
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section h2 {
+  color: #fff;
+  font-size: 15em;
+  cursor: default;
+}
+.light {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    transparent 10%,
+    rgba(0, 0, 0, 0.95) 20%
+  );
+}
