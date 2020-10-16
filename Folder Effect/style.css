@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: arial;
+  font-size: 16px;
+  margin: 0;
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.img_box_area {
+  display: flex;
+  width: 90%;
+  height: 60vh;
+  position: relative;
+  transition: all 1.5s ease-in-out;
+}
+.img_box {
+  z-index: 1;
+  flex: 0 0 20%;
+  background: url(./kaizen2.jpg);
+  background-size: 500%;
+}
+body:hover .img_box_area {
+  transform: scaleX(0.8);
+}
+.img_box:nth-child(1) {
+  border-radius: 30px 0 0 30px;
+  background-position: 0% center;
+}
+.img_box:nth-child(2) {
+  background-position: 25% center;
+}
+.img_box:nth-child(3) {
+  background-position: 50% center;
+}
+.img_box:nth-child(4) {
+  background-position: 75% center;
+}
+.img_box:nth-child(5) {
+  border-radius: 0 30px 30px 0;
+  background-position: 100% center;
+}
+body:hover .img_box:nth-child(odd) {
+  transform: skewY(16deg);
+}
+body:hover .img_box:nth-child(even) {
+  transform: skewY(-16deg);
+  filter: brightness(0.65);
+}
