@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+  height: 200px;
+  line-height: 200px;
+  margin-top: 180px;
+  font-size: 40px;
+}
+.container span {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  animation: textWay 1s ease-in infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes textWay {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
