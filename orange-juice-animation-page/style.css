@@ -27,6 +27,10 @@ ul {
 .menu-links ul li {
   display: inline-block;
   margin-right: 20px;
+  cursor: pointer;
+}
+.menu-links ul li:hover {
+  color: rgb(235, 182, 85);
 }
 .search,
 .cart {
@@ -41,6 +45,14 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   z-index: -1;
+}
+.fa:hover {
+  color: rgb(235, 182, 85);
+  cursor: pointer;
+}
+.account:hover {
+  color: rgb(235, 182, 85);
+  cursor: pointer;
 }
 .title {
   flex: 0 0 100%;
