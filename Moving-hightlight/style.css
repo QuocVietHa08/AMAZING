@@ -1,0 +1,112 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 12px 'Lucida Grande', Helvetica, Arial, serif;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+#page-wrap {
+  width: 960px;
+  margin: 80px auto;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 0 0 10px 0;
+}
+p {
+  margin: 0 0 20px 0;
+}
+h2 {
+  font-size: 20px;
+  margin: 50px 0 10px 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ' ';
+  clear: both;
+  height: 0;
+}
+
+#playpen {
+  background: rgb(155, 155, 155);
+  text-align: center;
+  height: 200px;
+  line-height: 200px;
+}
+
+#tabs-example {
+  background: #cecece;
+  padding: 8px 0 0 0;
+}
+
+.nav {
+  list-style: none;
+  border-bottom: 1px solid #a0a0a0;
+  padding: 10px 10px 0 10px;
+}
+.nav li {
+  display: inline;
+}
+
+.nav li.active a {
+  position: relative;
+  z-index: 1;
+  bottom: -2px;
+  margin-top: -2px;
+  background: #eee;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.nav li a {
+  display: block;
+  float: right;
+  text-decoration: none;
+  position: relative;
+
+  padding: 7px 50px;
+  margin: 0 0 0 -8px;
+  color: #222;
+  background: #d8d7d8;
+
+  -webkit-border-top-right-radius: 20px 40px;
+  -webkit-border-top-left-radius: 20px 40px;
+  -moz-border-radius-topleft: 20px 40px;
+  -moz-border-radius-topright: 20px 40px;
+
+  -webkit-box-shadow: inset 1px 1px 0 white;
+  -moz-box-shadow: inset 1px 1px 0 white;
+
+  border: 1px solid #a0a0a0;
+  border-bottom: 0;
+}
+
+.content {
+  min-height: 20px;
+  background: #eee;
+  -webkit-box-shadow: inset 0 1px 0 white;
+  -moz-box-shadow: inset 0 1px 0 white;
+}
